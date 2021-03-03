@@ -1,12 +1,13 @@
-import 'bootswatch/dist/sandstone/bootstrap.css';
-import './custom.css';
-
-import Login from './views/login';
+import "bootswatch/dist/sandstone/bootstrap.css";
+import NavBar from "./components/navbar";
+import "./custom.css";
+import Routes from "./main/routes";
 
 function App() {
   return (
     <div>
-      <Login/>
+      <NavBar />
+      <Routes />
     </div>
   );
 }

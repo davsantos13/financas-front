@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Card from "../components/card";
 import FormGroup from "../components/form-group";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -39,12 +40,23 @@ export default function Login() {
                           onChange={(e) => setPassword(e.target.value)}
                         />
                       </FormGroup>
-                      <button type="button" className="btn btn-outline-success" onClick={signIn}>
+                      <br></br>
+                      <br></br>
+                      <Link
+                        type="button"
+                        className="btn btn-outline-success"
+                        onClick={signIn}
+                      >
                         Entrar
-                      </button>
-                      <button type="button" className="btn btn-outline-info" style={{marginLeft: 10}}>
+                      </Link>
+                      <Link
+                        type="button"
+                        className="btn btn-outline-info"
+                        style={{ marginLeft: 10 }}
+                        to="/user-register"
+                      >
                         Cadastre-se
-                      </button>
+                      </Link>
                     </fieldset>
                   </div>
                 </div>

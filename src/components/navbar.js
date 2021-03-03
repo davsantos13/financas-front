@@ -21,10 +21,11 @@ export default function NavBar() {
       <div style={{ flexGrow: 6 }}></div>
       <div className="collapse navbar-collapse" id="navbarColor02">
         <ul className="navbar-nav mr-auto">
-          <NavItem href="/" label="Home" />
+          <NavItem href="/home" label="Home" />
           <NavItem href="/user-register" label="Usuários" />
           <NavItem href="/releases" label="Lançamentos" />
           <NavItem href="/login" label="Logout" />
+
         </ul>
       </div>
     </nav>
